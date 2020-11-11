@@ -33,15 +33,12 @@ var sconto40 = ((40 * prezzoBigliettoIntero) / 100);
 
 if (anniAcquirente < 18) {
      prezzoBigliettoTotale = prezzoBigliettoIntero - sconto20;
-     document.getElementById("sconto20").innerHTML = "Avendo meno di 18 anni lei ha diritto ad uno sconto del 20%";
-     document.getElementById("sconto40").innerHTML = "Lo sconto del 40% non è applicabile.";
+     document.getElementById("sconto").innerHTML = "Avendo meno di 18 anni lei ha diritto ad uno sconto del 20%";
 } else if (anniAcquirente > 65) {
      prezzoBigliettoTotale = prezzoBigliettoIntero - sconto40;
-     document.getElementById("sconto40").innerHTML = "Avendo più di 65 anni lei ha diritto ad uno sconto del 40%";
-     document.getElementById("sconto20").innerHTML = "Lo sconto del 20% non è applicabile.";
+     document.getElementById("sconto").innerHTML = "Avendo più di 65 anni lei ha diritto ad uno sconto del 40%";
 } else {
-     document.getElementById("sconto20").innerHTML = "Lo sconto del 20% non è applicabile.";
-     document.getElementById("sconto40").innerHTML = "Lo sconto del 40% non è applicabile.";
+     document.getElementById("sconto").innerHTML = "Nessuno sconto applicabile";
 }
 
 document.getElementById("totale").innerHTML = prezzoBigliettoTotale;
