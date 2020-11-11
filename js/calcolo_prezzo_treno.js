@@ -26,7 +26,7 @@ var sconto20 = ((20 * prezzoBigliettoIntero) / 100);
 // sconto del 40%
 var sconto40 = ((40 * prezzoBigliettoIntero) / 100);
 
-if ((anniAcquirente > 5 && anniAcquirente < 102) && (kmDaPercorrere > 10 && kmDaPercorrere < 2000)) {
+if ((anniAcquirente > 1 && anniAcquirente < 102) && (kmDaPercorrere > 0 && kmDaPercorrere < 2000)) {
 
      document.getElementById("km-da-percorrere").innerHTML = kmDaPercorrere;
 
@@ -47,5 +47,5 @@ if ((anniAcquirente > 5 && anniAcquirente < 102) && (kmDaPercorrere > 10 && kmDa
      document.getElementById("totale").innerHTML = prezzoBigliettoTotale.toFixed(2);
 
 } else {
-     alert("L'età inserita deve essere compresa tra i 5 ed i 102 anni mentre la distanza deve essere compresa tra i 10km ed i 2000km");
+     alert("L'età inserita deve essere compresa tra 1 e 102 anni mentre la distanza deve essere compresa tra 1km e 2000km");
 }
