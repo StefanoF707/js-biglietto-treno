@@ -5,7 +5,7 @@
 }
 
 body {
-     background: linear-gradient(90deg, #b3860a, #4fe61a);
+     background: linear-gradient(90deg, #07afcc, #00d9ff);
 }
 
 ul {
@@ -14,12 +14,17 @@ ul {
 
 #card {
      width: 500px;
-     margin: 20px auto;
-     border: 1px solid #000;
+     margin: 40px auto;
      padding: 20px;
      border-radius: 10px;
      text-align: center;
      background: #30be24;
+     box-shadow: 0px 0px 6px 0px #000000;
+     transition: transform 0.4s, box-shadow 0.4s;
+}
+#card:hover {
+     transform: scale(1.1);
+     box-shadow: 0px 0px 6px 2px #000000;
 }
 
 #card > h1 {
@@ -29,4 +34,35 @@ ul {
 
 #card li {
      margin-bottom: 20px;
+}
+
+li > span {
+     display: block;
+     font-weight: bold;
+     font-size: 22px;
+}
+
+li > span#km-da-percorrere::after {
+     content: "km";
+}
+li > span#prezzo-intero::after,
+li > span#totale::after {
+     content: "€";
+}
+
+#card > a.btn {
+     display: inline-block;
+     width: 100%;
+     font-size: 26px;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #fff;
+     text-shadow: -1px 0 #FF0000, 0 1px #FF0000, 1px 0 #FF0000, 0 -1px #FF0000;
+     background: #ffa800;
+     padding: 10px 0;
+     border-radius: 5px;
+     transition: background 0.5s;
+}
+#card > a.btn:hover {
+     background: #f5b72f;
 }

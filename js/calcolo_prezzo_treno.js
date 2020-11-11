@@ -36,10 +36,10 @@ if ((anniAcquirente > 5 && anniAcquirente < 102) && (kmDaPercorrere > 10 && kmDa
 
      if (anniAcquirente < 18) {
           prezzoBigliettoTotale = prezzoBigliettoIntero - sconto20;
-          document.getElementById("sconto").innerHTML = "Avendo meno di 18 anni lei ha diritto ad uno sconto del 20%";
+          document.getElementById("sconto").innerHTML = "Avendo meno di 18 anni lei ha diritto ad uno sconto del <b>20%</b>";
      } else if (anniAcquirente > 65) {
           prezzoBigliettoTotale = prezzoBigliettoIntero - sconto40;
-          document.getElementById("sconto").innerHTML = "Avendo più di 65 anni lei ha diritto ad uno sconto del 40%";
+          document.getElementById("sconto").innerHTML = "Avendo più di 65 anni lei ha diritto ad uno sconto del <b>40%</b>";
      } else {
           document.getElementById("sconto").innerHTML = "Nessuno sconto applicabile";
      }
