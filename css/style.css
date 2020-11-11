@@ -1,0 +1,27 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background: linear-gradient(90deg, #b3860a, #4fe61a);
+}
+
+ul {
+     list-style: none;
+}
+
+#card {
+     width: 500px;
+     margin: 20px auto;
+     border: 1px solid #000;
+     padding: 20px;
+     border-radius: 10px;
+     text-align: center;
+}
+
+#card > h1 {
+     text-transform: uppercase;
+     margin-bottom: 30px;
+}

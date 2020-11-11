@@ -4,26 +4,29 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Prezzo biglietto del treno</title>
+          <link rel="stylesheet" href="css/style.css">
      </head>
      <body>
 
-          <h1>Calcolatore prezzo</h1>
+          <div id="card">
+               <h1>biglietteria</h1>
 
-          <ul style="list-style: none;">
-               <li>
-                    Distanza da percorrere: <strong id="km-da-percorrere"></strong>km.
-               </li>
-               <li>
-                    Età: <strong id="età-utente"></strong> anni.
-               </li>
-               <li>
-                    Prezzo Intero: <strong id="prezzo-intero"></strong>€.
-               </li>
-               <li id="sconto"></li>
-               <li>
-                    Totale: <strong id="totale"></strong>€
-               </li>
-          </ul>
+               <ul>
+                    <li>
+                         Distanza da percorrere: <strong id="km-da-percorrere"></strong>km.
+                    </li>
+                    <li>
+                         Età: <strong id="età-utente"></strong> anni.
+                    </li>
+                    <li>
+                         Prezzo Intero: <strong id="prezzo-intero"></strong>€.
+                    </li>
+                    <li id="sconto"></li>
+                    <li>
+                         Totale: <strong id="totale"></strong>€.
+                    </li>
+               </ul>
+          </div>
 
      <script src="js/calcolo_prezzo_treno.js" charset="utf-8"></script>
      </body>
