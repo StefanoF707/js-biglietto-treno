@@ -15,7 +15,7 @@ var kmDaPercorrere = parseInt(prompt("Quanti km desidera percorrere?"));
 var anniAcquirente = parseInt(prompt("Qual è la sua età?"))
 
 // prezzo biglietto intero
-var prezzoBigliettoIntero = Math.round(0.21 * kmDaPercorrere);
+var prezzoBigliettoIntero = 0.21 * kmDaPercorrere;
 
 // prezzo totale
 var prezzoBigliettoTotale = prezzoBigliettoIntero;
@@ -32,7 +32,7 @@ if ((anniAcquirente > 5 && anniAcquirente < 102) && (kmDaPercorrere > 10 && kmDa
 
      document.getElementById("età-utente").innerHTML = anniAcquirente;
 
-     document.getElementById("prezzo-intero").innerHTML = prezzoBigliettoIntero;
+     document.getElementById("prezzo-intero").innerHTML = prezzoBigliettoIntero.toFixed(2);
 
      if (anniAcquirente < 18) {
           prezzoBigliettoTotale = prezzoBigliettoIntero - sconto20;
@@ -44,8 +44,8 @@ if ((anniAcquirente > 5 && anniAcquirente < 102) && (kmDaPercorrere > 10 && kmDa
           document.getElementById("sconto").innerHTML = "Nessuno sconto applicabile";
      }
 
-     document.getElementById("totale").innerHTML = prezzoBigliettoTotale;
-     
+     document.getElementById("totale").innerHTML = prezzoBigliettoTotale.toFixed(2);
+
 } else {
      alert("L'età inserita deve essere compresa tra i 5 ed i 102 anni mentre la distanza deve essere compresa tra i 10km ed i 2000km");
 }

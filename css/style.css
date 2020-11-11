@@ -19,9 +19,14 @@ ul {
      padding: 20px;
      border-radius: 10px;
      text-align: center;
+     background: #30be24;
 }
 
 #card > h1 {
      text-transform: uppercase;
      margin-bottom: 30px;
+}
+
+#card li {
+     margin-bottom: 20px;
 }
